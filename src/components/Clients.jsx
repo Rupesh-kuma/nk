@@ -2,24 +2,22 @@ import './Clients.css'
 
 const CLIENTS_ROW1 = [
   { name: '/brightshie.webp',       abbr: 'TC',  color: '#00c8ff' },
-  { name: '/brightshie.webp',abbr: 'BS',  color: '#8b5cf6' },
-  { name: '/brightshie.webp',      abbr: 'ARC', color: '#06ffd4' },
-  { name: '/brightshie.webp',  abbr: 'T&A', color: '#f472b6' },
-  { name: '/brightshie.webp',        abbr: 'ND',  color: '#00c8ff' },
-  { name: '/brightshie.webp',      abbr: 'PE',  color: '#ff6b35' },
-  { name: '/brightshie.webp',       abbr: 'SB',  color: '#8b5cf6' },
-  { name: '/brightshie.webp',         abbr: 'IP',  color: '#06ffd4' },
+  { name: '/logothakur.webp',abbr: 'BS',  color: '#8b5cf6' },
+  { name: '/lgogo-Picsart-AiImageEnhancer-Photoroom.png',      abbr: 'ARC', color: '#06ffd4' },
+  { name: '/New-Project-2.webp',  abbr: 'T&A', color: '#f472b6' },
+  { name: '/cropped-logo.jpeg',        abbr: 'ND',  color: '#00c8ff' },
+  { name: '/WhatsApp-Image-2024-08-29-at-11.20.36-PM.webp',      abbr: 'PE',  color: '#ff6b35' },
+  { name: '/IMG-20240928-WA0002-1.webp',       abbr: 'SB',  color: '#8b5cf6' },
+  { name: '/LOGO-1.png',         abbr: 'IP',  color: '#06ffd4' },
+  { name: '/arc-logo.webp',         abbr: 'IP',  color: '#06ffd4' },
 ]
 
 const CLIENTS_ROW2 = [
-  { name: 'Vertex Systems',       abbr: 'VS',  color: '#f472b6' },
-  { name: 'CoreLogic Partners',   abbr: 'CL',  color: '#00c8ff' },
-  { name: 'SwiftScale Co',        abbr: 'SS',  color: '#8b5cf6' },
-  { name: 'ZenithTech',           abbr: 'ZT',  color: '#06ffd4' },
-  { name: 'AlphaReach Media',     abbr: 'AR',  color: '#ff6b35' },
-  { name: 'BluePrint Studio',     abbr: 'BP',  color: '#00c8ff' },
-  { name: 'ElevateX',             abbr: 'EX',  color: '#f472b6' },
-  { name: 'NovaBrands',           abbr: 'NB',  color: '#8b5cf6' },
+  { name: '/google.webp',       abbr: 'google',  color: '#f472b6' },
+  { name: '/microsoft.webp',   abbr: 'microsoft',  color: '#00c8ff' },
+  { name: '/godaddy.png',        abbr: 'godaddy',  color: '#8b5cf6' },
+  { name: '/google cloud.webp',           abbr: 'ZT',  color: '#06ffd4' },
+  
 ]
 
 function LogoCard({ name, abbr, color }) {
@@ -29,7 +27,7 @@ function LogoCard({ name, abbr, color }) {
         <span className="logo-abbr" style={{ color }}>{abbr}</span>
         <div className="logo-glow" style={{ background: color }} />
       </div> */}
-      <span className="logo-name"><img src={name} alt={abbr} /></span>
+      <span className="logo-name"><img src={name} alt={abbr} className='logo_client'/></span>
     </div>
   )
 }
@@ -61,7 +59,9 @@ export default function Clients() {
           ))}
         </div>
       </div>
-
+      <h2 className="section-title brand_logo">
+      Our Business <span className="gradient-text">Partners</span>
+          </h2>
       {/* Marquee Row 2 — right */}
       <div className="marquee-track" style={{ marginTop: '1.25rem' }}>
         <div className="marquee-inner marquee-right">

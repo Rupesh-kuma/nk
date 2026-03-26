@@ -38,7 +38,7 @@
   /* Text */
   --text-primary:   #f0f0ff;
   --text-secondary: #9090c0;
-  --text-muted:     #5050a0;
+  --text-muted:     #fff;
   --text-accent:    #00c8ff;
 
   /* Typography */
@@ -151,7 +151,7 @@ section { position: relative; overflow: hidden; }
 
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-size: clamp(2.2rem, 4.5vw, 2.8rem);
   font-weight: 700;
   line-height: 1.08;
   letter-spacing: -0.02em;
@@ -309,7 +309,7 @@ body::after {
 .fab-container {
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  left: 2rem;
   display: flex;
   flex-direction: column;
   gap: .75rem;
@@ -419,4 +419,7 @@ body::after {
 @media (max-width: 768px) {
   :root { --section-pad: 5rem 0; }
   .fab-tooltip { display: none; }
+}
+.partner-icon img{
+  width: 50px;
 }

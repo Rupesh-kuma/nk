@@ -82,6 +82,9 @@ export default function Services() {
         <div className="services-grid">
           {SERVICES.map((svc, i) => (
             <article
+            onClick={() => {
+              window.open("https://wa.me/919711603885?text=Hello!%20I%27m%20interested%20in%20your%20services.", "_blank");
+            }}
               key={svc.id}
               className="service-card reveal glass-card"
               data-stagger

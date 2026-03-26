@@ -1,12 +1,12 @@
 import './Partners.css'
 
 const PARTNERS = [
-  { name: 'Google',         icon: '🔵', role: 'Search & Ads Partner',         desc: 'Certified Google Ads & Analytics partner delivering data-driven campaigns.' },
-  { name: 'Meta',           icon: '🟣', role: 'Meta Business Partner',         desc: 'Official Meta partner for Facebook & Instagram advertising excellence.' },
-  { name: 'WooCommerce',    icon: '🟢', role: 'E-Commerce Integration',        desc: 'Expert WooCommerce developers building scalable online stores.' },
-  { name: 'WordPress',      icon: '🔷', role: 'CMS Development',              desc: 'Advanced WordPress development for high-performance business websites.' },
-  { name: 'Cloudflare',     icon: '🟠', role: 'Security & CDN',               desc: 'Enterprise-grade website security, speed, and global content delivery.' },
-  { name: 'Razorpay',       icon: '⚡', role: 'Payment Gateway',              desc: 'Seamless payment integration for Indian e-commerce and SaaS products.' },
+  { name: 'Google',         icon: '/google_icon.png', role: 'Search & Ads Partner',         desc: 'Certified Google Ads & Analytics partner delivering data-driven campaigns.' },
+  { name: 'Meta',           icon: '/meta_icon.png', role: 'Meta Business Partner',         desc: 'Official Meta partner for Facebook & Instagram advertising excellence.' },
+  { name: 'WooCommerce',    icon: '/woocommerce_icon.png', role: 'E-Commerce Integration',        desc: 'Expert WooCommerce developers building scalable online stores.' },
+  { name: 'WordPress',      icon: '/wordpress_icon.png', role: 'CMS Development',              desc: 'Advanced WordPress development for high-performance business websites.' },
+  { name: 'Cloudflare',     icon: '/hacking_con.png', role: 'Security & CDN',               desc: 'Enterprise-grade website security, speed, and global content delivery.' },
+  { name: 'Razorpay',       icon: '/Razorpay_con.webp', role: 'Payment Gateway',              desc: 'Seamless payment integration for Indian e-commerce and SaaS products.' },
 ]
 
 export default function Partners() {
@@ -27,20 +27,20 @@ export default function Partners() {
 
         <div className="partners-cards">
           {PARTNERS.map((p, i) => (
-            <div
+            <a href='https://wa.me/919711603885?text=Hello!%20I%27m%20interested%20in%20your%20services.'
               key={p.name}
               className="partner-card glass-card reveal"
               data-stagger
               style={{ transitionDelay: `${i * 0.1}s` }}
             >
-              <div className="partner-icon">{p.icon}</div>
+              <div className="partner-icon"><img src={p.icon} alt={p.name} /></div>
               <div className="partner-body">
                 <h3 className="partner-name">{p.name}</h3>
                 <span className="partner-role">{p.role}</span>
                 <p className="partner-desc">{p.desc}</p>
               </div>
               <div className="partner-badge">✓ Integrated</div>
-            </div>
+            </a>
           ))}
         </div>
 

@@ -27,8 +27,7 @@ export default function Footer() {
               </div> */}
             </div>
             <p className="footer-tagline">
-              Transforming brands through exceptional design, engineering, and data-driven digital marketing.
-              Your growth is our mission.
+            We specialize in designing and developing websites that are not just visually engaging but strategically built around your business goals. Our team blends creativity, technology, and performance-driven thinking to craft digital experiences that truly represent your brand.
             </p>
             <div className="footer-social">
               {[
@@ -72,7 +71,7 @@ export default function Footer() {
                 { icon: '📞', val: '+91-9711603885',       href: 'tel:+919711603885' },
                 { icon: '💬', val: 'WhatsApp Us',           href: 'https://wa.me/919711603885' },
                 { icon: '🌐', val: 'nkinnovativeminds.in',  href: 'https://nkinnovativeminds.in' },
-                { icon: '📍', val: 'India (Nationwide)',    href: null },
+                { icon: '📍', val: 'Pocket C, Sanjay Gandhi Memorial Nagar, Sector 48, Faridabad, Haryana 121001',    href: null },
               ].map(({ icon, val, href }) => (
                 <li key={val}>
                   <span className="fc-icon">{icon}</span>

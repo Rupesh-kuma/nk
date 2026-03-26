@@ -5,3 +5,80 @@
 .site-wrap.visible {
   opacity: 1;
 }
+
+
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../assets//Rajdhani-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../assets//Rajdhani-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../assets//Rajdhani-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../assets//Rajdhani-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../assets//Rajdhani-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+/* DM Sans (All Weights + Italic optional) */
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets//DMSans-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets//DMSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets//DMSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/DMSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+/* JetBrains Mono */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../assets/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../assets/JetBrainsMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../assets/JetBrainsMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+}

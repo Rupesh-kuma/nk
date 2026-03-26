@@ -30,7 +30,7 @@ export default function Contact() {
     { icon: '📞', label: 'Call Us', val: '+91-9711603885',        href: 'tel:+919711603885' },
     { icon: '💬', label: 'WhatsApp', val: 'Chat Instantly',        href: 'https://wa.me/919711603885' },
     { icon: '🌐', label: 'Website',  val: 'nkinnovativeminds.in',   href: 'https://nkinnovativeminds.in' },
-    { icon: '📍', label: 'Location', val: 'India (Nationwide)',     href: null },
+    { icon: '📍', label: 'Location', val: 'Pocket C, Sanjay Gandhi Memorial Nagar, Sector 48, Faridabad, Haryana 121001',     href:'https://maps.app.goo.gl/ygD7WM7Yenhk7ZBF8' },
   ]
 
   return (
@@ -115,17 +115,17 @@ export default function Contact() {
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="name">Full Name *</label>
-                    <input id="name" name="name" type="text" placeholder="Rahul Sharma" value={form.name} onChange={handle} required />
+                    <input id="name" name="name" type="text" placeholder="Enter Your Name" value={form.name} onChange={handle} required />
                   </div>
                   <div className="form-group">
                     <label htmlFor="phone">Phone Number *</label>
-                    <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" value={form.phone} onChange={handle} required />
+                    <input id="phone" name="phone" type="tel" placeholder="Enter Phone No." value={form.phone} onChange={handle} required />
                   </div>
                 </div>
 
                 <div className="form-group">
                   <label htmlFor="email">Email Address</label>
-                  <input id="email" name="email" type="email" placeholder="you@company.com" value={form.email} onChange={handle} />
+                  <input id="email" name="email" type="email" placeholder="Enter Email ID" value={form.email} onChange={handle} />
                 </div>
 
                 <div className="form-row">
