@@ -1,0 +1,7 @@
+.site-wrap {
+  opacity: 0;
+  transition: opacity .6s ease .2s;
+}
+.site-wrap.visible {
+  opacity: 1;
+}

@@ -1,0 +1,130 @@
+.clients {
+  padding: var(--section-pad);
+  background: var(--bg-surface);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fade masks on sides */
+.clients-overlay-left,
+.clients-overlay-right {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 200px;
+  z-index: 2;
+  pointer-events: none;
+}
+.clients-overlay-left {
+  left: 0;
+  background: linear-gradient(90deg, var(--bg-surface), transparent);
+}
+.clients-overlay-right {
+  right: 0;
+  background: linear-gradient(-90deg, var(--bg-surface), transparent);
+}
+
+/* Marquee track */
+.marquee-track {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-inner {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+}
+
+.marquee-left  { animation: marquee 35s linear infinite; }
+.marquee-right { animation: marquee 35s linear infinite reverse; }
+
+.marquee-inner:hover { animation-play-state: paused; }
+
+/* Logo card */
+.client-logo-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 1rem 1.5rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+  cursor: default;
+  transition: all .35s ease;
+  white-space: nowrap;
+  min-width: 180px;
+}
+.client-logo-card:hover {
+  border-color: var(--logo-col);
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 0 25px color-mix(in srgb, var(--logo-col) 20%, transparent);
+  transform: translateY(-4px);
+}
+
+.logo-emblem {
+  position: relative;
+  width: 40px; height: 40px;
+  background: rgba(255,255,255,.04);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.logo-abbr {
+  font-family: var(--font-display);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  position: relative;
+  z-index: 1;
+}
+.logo-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  opacity: .08;
+  transition: opacity .3s;
+}
+.client-logo-card:hover .logo-glow { opacity: .2; }
+
+.logo-name {
+  font-family: var(--font-display);
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color .3s;
+}
+.client-logo-card:hover .logo-name { color: var(--text-primary); }
+
+/* Stats row */
+.clients-stats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-top: 3.5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid var(--glass-border);
+}
+.client-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.cstat-val {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.cstat-label {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  color: var(--text-muted);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
