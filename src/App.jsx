@@ -130,7 +130,7 @@ export default function App() {
         <Navbar />
         <main>
           <Hero />
-          <div className="glow-divider" />
+          {/* <div className="glow-divider" /> */}
           <Services />
           <div className="glow-divider" />
           <About />

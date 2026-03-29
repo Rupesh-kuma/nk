@@ -71,22 +71,7 @@ export default function Clients() {
         </div>
       </div>
 
-      {/* Counter row */}
-      <div className="container">
-        <div className="clients-stats reveal">
-          {[
-            { val: '200+', label: 'Active Clients' },
-            { val: '50+',  label: 'Industries' },
-            { val: '8+',   label: 'Years of Trust' },
-            { val: '98%',  label: 'Retention Rate' },
-          ].map(({ val, label }) => (
-            <div className="client-stat" key={label}>
-              <span className="cstat-val gradient-text">{val}</span>
-              <span className="cstat-label">{label}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+     
     </section>
   )
 }

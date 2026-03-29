@@ -109,7 +109,12 @@
   margin-left: auto;
   flex-shrink: 0;
 }
-
+.partner-card{
+  text-decoration: none;
+}
+.partners-cta{
+  margin-top: 4rem;
+}
 @media (max-width: 1000px) {
   .partners-cards { grid-template-columns: repeat(2, 1fr); }
 }
@@ -117,4 +122,10 @@
   .partners-cards { grid-template-columns: 1fr; }
   .pcta-inner { flex-direction: column; text-align: center; }
   .pcta-btn { margin-left: 0; }
+  .partners-cta{
+    margin-top: 1rem;
+  }
+  .pcta-desc{
+    text-align: center;
+  }
 }

@@ -45,7 +45,7 @@ export default function Partners() {
         </div>
 
         {/* Partnership CTA */}
-        <div className="partners-cta reveal" style={{ textAlign: 'center', marginTop: '4rem' }}>
+        <div className="partners-cta reveal" style={{ textAlign: 'center'}}>
           <div className="pcta-inner glass-card">
             <div className="pcta-icon">🤝</div>
             <div>

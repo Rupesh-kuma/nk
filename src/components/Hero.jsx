@@ -69,10 +69,11 @@ export default function Hero() {
 
         {/* Main headline */}
         <h1 className="hero-title">
-          <span className="hero-title-line">We Architect </span> <span className="hero-title-line hero-title-gradient">
-            Digital Futures
-          </span> <span className="hero-title-line hero-title-sub">
-            That Define Industries
+          <span className="hero-title-line">Get Professional </span> <span className="hero-title-line hero-title-gradient">
+          Website in 3 Days
+          </span>
+           <span className="hero-title-line hero-title-sub">
+           Affordable, SEO Optimized, Business Ready Websites
           </span>
         </h1>
 
@@ -85,9 +86,8 @@ export default function Hero() {
 
         {/* Description */}
         <p className="hero-desc">
-          NK Innovative Minds engineers high-performance digital ecosystems — from pixel-perfect websites
-          to full-funnel marketing campaigns that convert visitors into loyal customers.
-          8+ years. 200+ brands. Zero compromises.
+        We deliver high-performance websites designed to grow your business — 
+from stunning designs to conversion-focused development. <br/>Fast delivery. Affordable pricing. Zero compromises.
         </p>
 
         {/* CTA Row */}
@@ -107,7 +107,7 @@ export default function Hero() {
         </div>
 
         {/* Metrics row */}
-        <div className="hero-metrics">
+        {/* <div className="hero-metrics">
           {[
             { val: '8+',   label: 'Years Active',       icon: '◆' },
             { val: '200+', label: 'Brands Transformed',  icon: '◆' },
@@ -122,16 +122,46 @@ export default function Hero() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
+
+
+
       </div>
 
       {/* Scroll indicator */}
-      <div className="hero-scroll">
+      {/* <div className="hero-scroll">
         <div className="scroll-track">
           <div className="scroll-thumb" />
         </div>
         <span>Scroll to explore</span>
-      </div>
+      </div> */}
+      <div className="offer-box">
+  <div className="offer-badge">🔥 Limited Time Offer</div>
+  <h4 className="offer-heading">
+    Website starting at <span>$99</span>
+  </h4>
+  <p className="offer-sub">
+    Professional, SEO-ready websites crafted for your business growth
+  </p>
+  <div className="pricing-cards">
+    <div className="price-card">
+      <h4>Starter</h4>
+      <p className="price">$149</p>
+    </div>
+    <div className="price-card popular">
+      <div className="tag">Most Popular</div>
+      <h4>Business</h4>
+      <p className="price">$249</p>
+    </div>
+    <div className="price-card">
+      <h4>Premium</h4>
+      <p className="price">$399</p>
+    </div>
+  </div>
+  <button onClick={() => {
+              window.open("https://wa.me/919711603885?text=Hello!%20I%27m%20interested%20in%20your%20services.", "_blank");
+            }} className="offer-btn">Get Started →</button>
+</div>
     </section>
   )
 }

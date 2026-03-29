@@ -1,5 +1,5 @@
 .about {
-  padding: var(--section-pad);
+  padding: 3rem 0;
   background: var(--bg-surface);
   position: relative;
   overflow: hidden;
@@ -18,7 +18,7 @@
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -100,8 +100,8 @@
 
 /* Content side */
 .about-content {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   gap: 1.2rem;
 }
 .about-lead {

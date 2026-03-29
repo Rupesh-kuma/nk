@@ -10,31 +10,31 @@
 
 @font-face {
   font-family: 'Rajdhani';
-  src: url('../assets//Rajdhani-Light.woff2') format('woff2');
+  src: url('../assets/Rajdhani/Rajdhani-Light.ttf') format('truetype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'Rajdhani';
-  src: url('../assets//Rajdhani-Regular.woff2') format('woff2');
+  src: url('../assets/Rajdhani/Rajdhani-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Rajdhani';
-  src: url('../assets//Rajdhani-Medium.woff2') format('woff2');
+  src: url('../assets/Rajdhani/Rajdhani-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Rajdhani';
-  src: url('../assets//Rajdhani-SemiBold.woff2') format('woff2');
+  src: url('../assets/Rajdhani/Rajdhani-SemiBold.ttf') format('truetype');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'Rajdhani';
-  src: url('../assets//Rajdhani-Bold.woff2') format('woff2');
+  src: url('../assets/Rajdhani/Rajdhani-Bold.ttf') format('truetype');
   font-weight: 700;
 }
 
@@ -42,43 +42,43 @@
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('../assets//DMSans-Light.woff2') format('woff2');
+  src: url('../assets/DM_Sans/static/DMSans-Light.ttf') format('truetype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('../assets//DMSans-Regular.woff2') format('woff2');
+  src: url('../assets/DM_Sans/static/DMSans-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('../assets//DMSans-Medium.woff2') format('woff2');
+  src: url('../assets/DM_Sans/static/DMSans-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('../assets/DMSans-SemiBold.woff2') format('woff2');
+  src: url('../assets/DM_Sans/static/DMSans-SemiBold.ttf') format('truetype');
   font-weight: 600;
 }
 
 /* JetBrains Mono */
 @font-face {
   font-family: 'JetBrains Mono';
-  src: url('../assets/JetBrainsMono-Regular.woff2') format('woff2');
+  src: url('../assets/JetBrains_Mono/static/JetBrainsMono-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'JetBrains Mono';
-  src: url('../assets/JetBrainsMono-Medium.woff2') format('woff2');
+  src: url('../assets/JetBrains_Mono/static/JetBrainsMono-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'JetBrains Mono';
-  src: url('../assets/JetBrainsMono-Bold.woff2') format('woff2');
+  src: url('../assets/JetBrains_Mono/static/JetBrainsMono-Bold.ttf') format('truetype');
   font-weight: 700;
 }

@@ -143,9 +143,18 @@
   align-items: center;
   gap: 6px;
 }
+.process-header{
+  margin-bottom: 5rem;
+}
 
 @media (max-width: 640px) {
-  .process-step { grid-template-columns: 56px 1fr; gap: 1.2rem; }
+  .process-step { grid-template-columns:  1fr; gap: 1.2rem; }
   .step-node { width: 54px; height: 54px; }
   .step-connector { left: 26px; }
+  .process-step{
+    padding-bottom: 0.9rem;
+  }
+  .process-header{
+    margin-bottom: 2rem;
+  }
 }

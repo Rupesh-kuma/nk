@@ -28,8 +28,8 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#hero" className="nav-logo" aria-label="NK Innovative Minds Home">
           <div className="logo-box">
-            <img src='/nk_logo.webp' className="logo-letters"/>
-            <div className="logo-scan" />
+            <img src='/nk_logo.webp' alt='logo' className="logo-letters"/>
+            {/* <div className="logo-scan" /> */}
           </div>
           {/* <div className="logo-wordmark">
             <span className="logo-w1">Innovative</span>

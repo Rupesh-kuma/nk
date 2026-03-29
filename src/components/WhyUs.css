@@ -100,6 +100,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-secondary);
+  align-items: center;
 }
 
 @media (max-width: 1000px) { .why-grid { grid-template-columns: repeat(2, 1fr); } }

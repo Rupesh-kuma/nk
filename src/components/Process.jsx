@@ -45,7 +45,7 @@ export default function Process() {
       <div className="process-beam process-beam-1" />
       <div className="process-beam process-beam-2" />
       <div className="container">
-        <header className="process-header reveal" style={{ textAlign: 'center', marginBottom: '5rem' }}>
+        <header className="process-header reveal" style={{ textAlign: 'center' }}>
           <span className="section-eyebrow">How We Deliver</span>
           <h2 className="section-title">
             Our Proven <span className="gradient-text">4-Phase Process</span>
