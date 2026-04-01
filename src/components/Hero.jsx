@@ -1,10 +1,38 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import HeroCanvas from './HeroCanvas'
 import './Hero.css'
 
 const TYPED_WORDS = ['Web Development', 'Digital Marketing', 'SEO Mastery', 'Brand Identity', 'Catalogue Design']
 
 export default function Hero() {
+
+ const [currency, setCurrency] = useState("USD");
+
+  const prices = {
+    USD: {
+      starter: 149,
+      business: 249,
+      premium: 399,
+      symbol: "$",
+    },
+    INR: {
+      starter: "13,908",
+      business: "23,243",
+      premium: "37,245",
+      symbol: "₹",
+    },
+  };
+
+  const handleClick = (plan) => {
+    const price = prices[currency][plan];
+    const symbol = prices[currency].symbol;
+
+    window.open(
+      `https://wa.me/919711603885?text=Hello! I'm interested in ${plan} plan (${symbol}${price})`,
+      "_blank"
+    );
+  };
+
   const typedRef = useRef(null)
 
   useEffect(() => {
@@ -135,33 +163,69 @@ from stunning designs to conversion-focused development. <br/>Fast delivery. Aff
         </div>
         <span>Scroll to explore</span>
       </div> */}
-      <div className="offer-box">
-  <div className="offer-badge">🔥 Limited Time Offer</div>
-  <h4 className="offer-heading">
-    Website starting at <span>$99</span>
-  </h4>
-  <p className="offer-sub">
-    Professional, SEO-ready websites crafted for your business growth
-  </p>
-  <div className="pricing-cards">
-    <div className="price-card">
-      <h4>Starter</h4>
-      <p className="price">$149</p>
+ <div className="offer-box">
+      <div className="offer-badge">🔥 Limited Time Offer</div>
+
+      {/* Currency Tabs */}
+      <div className="currency-tabs">
+        <button
+          className={currency === "USD" ? "active" : ""}
+          onClick={() => setCurrency("USD")}
+        >
+          USD ($)
+        </button>
+        <button
+          className={currency === "INR" ? "active" : ""}
+          onClick={() => setCurrency("INR")}
+        >
+          INR (₹)
+        </button>
+      </div>
+
+      <h4 className="offer-heading">
+        Website starting at{" "}
+        <span>
+          {prices[currency].symbol}
+          {currency === "USD" ? "99" : "9,241"}
+        </span>
+      </h4>
+
+      <p className="offer-sub">
+        Professional, SEO-ready websites crafted for your business growth
+      </p>
+
+      <div className="pricing-cards">
+        {/* Starter */}
+        <div className="price-card" onClick={() => handleClick("Starter")}>
+          <h4>Starter</h4>
+          <p className="price">
+            {prices[currency].symbol}
+            {prices[currency].starter}
+          </p>
+         
+        </div>
+
+        {/* Business */}
+        <div className="price-card popular"  onClick={() => handleClick("Business")}>
+          <div className="tag">Most Popular</div>
+          <h4>Business</h4>
+          <p className="price">
+            {prices[currency].symbol}
+            {prices[currency].business}
+          </p>
+         
+        </div>
+
+        {/* Premium */}
+        <div className="price-card" onClick={() => handleClick("Premium")}>
+          <h4>Premium</h4>
+          <p className="price">
+            {prices[currency].symbol}
+            {prices[currency].premium}
+          </p>
+        </div>
+      </div>
     </div>
-    <div className="price-card popular">
-      <div className="tag">Most Popular</div>
-      <h4>Business</h4>
-      <p className="price">$249</p>
-    </div>
-    <div className="price-card">
-      <h4>Premium</h4>
-      <p className="price">$399</p>
-    </div>
-  </div>
-  <button onClick={() => {
-              window.open("https://wa.me/919711603885?text=Hello!%20I%27m%20interested%20in%20your%20services.", "_blank");
-            }} className="offer-btn">Get Started →</button>
-</div>
     </section>
   )
 }

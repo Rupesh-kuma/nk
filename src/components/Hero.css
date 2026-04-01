@@ -90,7 +90,7 @@
 .hero-title {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
   animation: fadeUp .8s ease .15s both;
@@ -108,7 +108,7 @@
   animation: hue-rotate 8s linear infinite;
 }
 .hero-title-sub {
-  font-size: clamp(2rem, 2.5vw, 4rem);
+  font-size: clamp(2rem, 2.2vw, 4rem);
   color: var(--text-secondary);
   font-weight: 500;
   display: block;
@@ -268,10 +268,10 @@
   position: absolute;
   left: auto;
   right: 14px;
-  bottom: 8px;
-  animation: floatBox 4s ease-in-out infinite;
+  /* bottom: 8px; */
+  /* animation: floatBox 4s ease-in-out infinite; */
 }
-@keyframes floatBox {
+/* @keyframes floatBox {
   0% {
     transform: translateY(0px);
   }
@@ -281,7 +281,7 @@
   100% {
     transform: translateY(0px);
   }
-}
+} */
 
 .offer-badge {
   display: inline-block;
@@ -320,6 +320,7 @@
   text-align: center;
   flex: 1;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .price-card:hover {
@@ -362,3 +363,24 @@
   cursor: pointer;
 z-index: 123;
 }
+
+.currency-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.currency-tabs button {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.currency-tabs .active {
+  background: linear-gradient(90deg, #00c6ff, #7b61ff);
+}
+

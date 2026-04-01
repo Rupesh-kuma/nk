@@ -221,7 +221,7 @@ section { position: relative; overflow: hidden; }
 
 /* ── Glass Card Base ── */
 .glass-card {
-  background: rgb(255 255 255 / 24%);
+  background: rgba(0,200,255,0.12);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(20px);
@@ -601,4 +601,36 @@ font-size: clamp(1.5rem, 4.5vw, 2.8rem);
         padding: 8px 22px;
         width: 100%;
     }
+}
+
+/* 🎨 THEME OPTIONS */
+
+/* Default (already hai) */
+
+/* Green Theme */
+.theme-green {
+  --neon-blue: #00ff88;
+  --neon-purple: #00cc66;
+  --grad-primary: linear-gradient(135deg, #00ff88, #00cc66);
+}
+
+/* Orange Theme */
+.theme-orange {
+  --neon-blue: #ff8c00;
+  --neon-purple: #ff3c00;
+  --grad-primary: linear-gradient(135deg, #ff8c00, #ff3c00);
+}
+
+/* Pink Theme */
+.theme-pink {
+  --neon-blue: #ff4fd8;
+  --neon-purple: #ff0080;
+  --grad-primary: linear-gradient(135deg, #ff4fd8, #ff0080);
+}
+
+/* Cyan Theme */
+.theme-cyan {
+  --neon-blue: #00c8ff;
+  --neon-purple: #06ffd4;
+  --grad-primary: linear-gradient(135deg, #00c8ff, #06ffd4);
 }

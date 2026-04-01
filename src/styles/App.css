@@ -82,3 +82,28 @@
   src: url('../assets/JetBrains_Mono/static/JetBrainsMono-Bold.ttf') format('truetype');
   font-weight: 700;
 }
+
+
+
+.theme-switcher {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.color.default { background: linear-gradient(135deg,#00c8ff,#8b5cf6); }
+.color.green { background: linear-gradient(135deg,#00ff88,#00cc66); }
+.color.orange { background: linear-gradient(135deg,#ff8c00,#ff3c00); }
+.color.pink { background: linear-gradient(135deg,#ff4fd8,#ff0080); }
