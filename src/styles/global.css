@@ -484,8 +484,12 @@ p{
     padding: 0 1rem;
   }
   .hero-title {
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     text-align: center;
+    line-height: 43px;
+}
+.hero_canva{
+  display: none;
 }
 .hero{
   min-height: 100%;

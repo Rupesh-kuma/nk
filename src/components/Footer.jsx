@@ -71,7 +71,7 @@ export default function Footer() {
                 { icon: '📞', val: '+91-9711603885',       href: 'tel:+919711603885' },
                 { icon: '💬', val: 'WhatsApp Us',           href: 'https://wa.me/919711603885' },
                 { icon: '🌐', val: 'nkinnovativeminds.in',  href: 'https://nkinnovativeminds.in' },
-                { icon: '📍', val: 'Pocket C, Sanjay Gandhi Memorial Nagar, Sector 48, Faridabad, Haryana 121001',    href: null },
+                { icon: '📍', val: 'Sector 48, Faridabad, Haryana 121001',    href: null },
               ].map(({ icon, val, href }) => (
                 <li key={val}>
                   <span className="fc-icon">{icon}</span>

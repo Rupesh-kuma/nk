@@ -325,6 +325,7 @@ export default function HeroCanvas() {
         height: '100%',
         zIndex: 0,
       }}
+      className='hero_canva'
     />
   )
 }

@@ -113,13 +113,13 @@ function FAB() {
 
 // ─── App ──────────────────────────────────────────────
 export default function App() {
-const changeTheme = (theme) => {
-  document.body.className = ""; // reset
+// const changeTheme = (theme) => {
+//   document.body.className = ""; // reset
 
-  if (theme !== "default") {
-    document.body.classList.add(`theme-${theme}`);
-  }
-};
+//   if (theme !== "default") {
+//     document.body.classList.add(`theme-${theme}`);
+//   }
+// };
 
   const [loaderDone, setLoaderDone] = useState(false)
   useScrollReveal()
@@ -131,7 +131,7 @@ const changeTheme = (theme) => {
 
   return (
     <>
-      <Cursor />
+      {/* <Cursor /> */}
       <Loader done={loaderDone} />
 
       <div className={`site-wrap ${loaderDone ? 'visible' : ''}`}>
@@ -141,10 +141,11 @@ const changeTheme = (theme) => {
           {/* <div className="glow-divider" /> */}
           <Services />
           <div className="glow-divider" />
-          <About />
-          <div className="glow-divider" />
           <Clients />
           <div className="glow-divider" />
+          <About />
+          <div className="glow-divider" />
+          
           <Partners />
           <div className="glow-divider" />
           <Process />
@@ -157,12 +158,12 @@ const changeTheme = (theme) => {
           <Contact />
         </main>
         <Footer />
-        <div className="theme-switcher">
+        {/* <div className="theme-switcher">
           <span onClick={() => changeTheme("default")} className="color default"></span>
           <span onClick={() => changeTheme("green")} className="color green"></span>
           <span onClick={() => changeTheme("orange")} className="color orange"></span>
           <span onClick={() => changeTheme("pink")} className="color pink"></span>
-        </div>
+        </div> */}
       </div>
 
       <FAB />
