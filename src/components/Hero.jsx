@@ -24,7 +24,7 @@ export default function Hero() {
   };
 
   const handleClick = (plan) => {
-    const price = prices[currency][plan];
+    const price = prices[currency].starter;
     const symbol = prices[currency].symbol;
 
     window.open(

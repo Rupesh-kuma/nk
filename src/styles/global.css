@@ -638,3 +638,103 @@ font-size: clamp(1.5rem, 4.5vw, 2.8rem);
   --neon-purple: #06ffd4;
   --grad-primary: linear-gradient(135deg, #00c8ff, #06ffd4);
 }
+
+
+
+html {
+  scroll-behavior: smooth; /* 🔥 Smooth scrolling */
+}
+
+.projects-section {
+  padding: 60px 40px;
+  /* background: #f7f7f7;z */
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.header span {
+  color: red;
+}
+
+.view-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: black;
+}
+
+/* GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  position: relative;
+  height: 283px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* 🔥 MAIN MAGIC */
+.project-card img {
+  width: 100%;
+  height: auto; /* ❗ important (no fixed height) */
+  transform: translateY(0);
+  transition: transform 20s ease;
+}
+
+/* 🔥 FULL IMAGE SCROLL */
+.project-card:hover img {
+  transform: translateY(calc(-100% + 220px));
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  background: linear-gradient(transparent, black);
+  transition: 0.5s;
+
+  pointer-events: none; /* 🔥 IMPORTANT FIX */
+}
+
+/* OVERLAY SHOW */
+.project-card:hover .overlay {
+  bottom: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

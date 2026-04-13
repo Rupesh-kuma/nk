@@ -12,6 +12,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { useScrollReveal } from './hooks/useScrollReveal'
 import './styles/App.css'
+import Projects from './components/ourProject'
 
 // ─── Custom Cursor ────────────────────────────────────
 function Cursor() {
@@ -139,10 +140,13 @@ export default function App() {
         <main>
           <Hero />
           {/* <div className="glow-divider" /> */}
+           <Clients />
+          <div className="glow-divider" />
+          <Projects/>
+          <div className="glow-divider" />
           <Services />
           <div className="glow-divider" />
-          <Clients />
-          <div className="glow-divider" />
+         
           <About />
           <div className="glow-divider" />
           

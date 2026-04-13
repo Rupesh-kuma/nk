@@ -17,6 +17,9 @@ const CLIENTS_ROW2 = [
   { name: '/microsoft.webp',   abbr: 'microsoft',  color: '#00c8ff' },
   { name: '/godaddy.png',        abbr: 'godaddy',  color: '#8b5cf6' },
   { name: '/google cloud.webp',           abbr: 'ZT',  color: '#06ffd4' },
+  { name: '/big book.png',           abbr: 'ZT',  color: '#06ffd4' },
+  { name: '/whm.png',           abbr: 'ZT',  color: '#06ffd4' },
+  { name: '/hostinger.png',           abbr: 'ZT',  color: '#06ffd4' },
   
 ]
 
